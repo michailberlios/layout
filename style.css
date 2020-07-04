@@ -15,7 +15,7 @@ header {
 header h2 {
     display: flex;
     justify-content: center;
-    font-family: Playfair Display;
+    font-family: Playfair+Display;
     font-style: normal;
     font-weight: 900;
     font-size: 35px;
@@ -23,23 +23,24 @@ header h2 {
 }
 
 header ul {
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 2px;
     list-style-type: none;
     display: flex;
     justify-content: center;
+    font-weight: 300;
 }
 
 header li {
     padding: 0 24px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.logo {
+.banner {
     display: flex;
     flex-direction: column;
     background: url("./assets/img/Hotel-11.png") center;
@@ -48,13 +49,12 @@ header li {
     background-size: cover;
     height: 464px;
     color: #fff;
-
-}
-
-.logo .tag {
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
+}
+
+.banner .tag {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -65,9 +65,7 @@ header li {
     margin: 66px 0 0;
 }
 
-.logo h1 {
-    font-family: Roboto;
-    font-style: normal;
+.banner h1 {
     font-weight: 300;
     font-size: 72px;
     line-height: 85px;
@@ -77,6 +75,64 @@ header li {
     margin: 44px 0 42px;
 }
 
-.logo .navigation {
+.banner .navigation {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 15px;
+}
 
+.banner .navigation span:first-child {
+    cursor: pointer;
+}
+
+.banner .navigation span:first-child:after {
+    content: "--------------";
+    color: transparent;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+}
+
+.banner .navigation span:last-child {
+    cursor: pointer;
+}
+
+.banner .navigation span:last-child:before {
+    content: "--------------";
+    color: transparent;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top: -8px;
+    left: -10px;
+}
+
+.banner .navigation svg {
+    cursor: pointer;
+    margin: 0 24px;
+}
+
+.banner .navigation .center {
+    position: relative;
+}
+
+.banner .navigation .separator {
+    display: block;
+    width: 1px;
+    height: 42px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 63px;
+}
+
+.banner p {
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 55px;
+    width: 456px;
+    font-weight: 300;
 }

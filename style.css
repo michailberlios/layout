@@ -1,8 +1,82 @@
-form.form__container {
+body, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+header,main,.logo {
+    flex-direction: column;
+    display: flex;
+}
+
+header {
+    height: 218px;
+}
+
+header h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    margin: 60px 0 46px;
+}
+
+header ul {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header li {
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+.logo {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    background: url("./assets/img/Hotel-11.png") center;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    height: 464px;
+    color: #fff;
+
 }
-form > input {
-    margin: 5px 0;
+
+.logo .tag {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #FF7931;
+    padding: 4px 14px;
+    margin: 66px 0 0;
+}
+
+.logo h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 85px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 44px 0 42px;
+}
+
+.logo .navigation {
+
 }

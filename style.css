@@ -1,22 +1,106 @@
-body{
-    margin:0;
-}
+body, h1, h2, h3, ul{margin:0;}
+
 header{
     display: flex; 
+    flex-direction: column;
     width: 100%; 
     height: 218px;
-    flex-direction: column;
-    justify-content: center;
+    
 }
+
 h2{
     display: flex; 
     justify-content: center;
+    margin: 60px 0 46px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    
 }
+
 ul{ 
     padding: 0;
     text-transform:uppercase;
     list-style:none;
     display: flex;
     justify-content: center;
+    margin-bottom: 47px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #000000;
 }
+
 header ul li{padding: 0 10px;}
+
+main{
+    background: url(el.png) no-repeat; 
+    height: 740px; 
+    width: 1009px;
+    background-size:contain; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.new{
+    justify-content: center; 
+    display: flex; 
+    margin: 20px 0 0 0;
+}
+
+.new span{
+    border: 1px solid orange;
+    color: white;
+    background: orange;
+    padding: 5px 15px;
+}
+
+.pod{
+    justify-content: center; 
+    display: flex; 
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 85px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0 0 0;
+}
+
+main div p{color: white;}
+
+main div {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+main >div >div{width: 30%;}
+
+.line{border-bottom: 1px solid white; width: 64px;}
+
+main>div>figure{
+    display: flex; 
+    flex-direction: column;
+}
+
+main figure div{height: 20px;}
+
+figure{margin: 0 0 0 10px;}
+
+.description{
+    color: white; 
+    width: 40%;
+    padding: 80px 0 0 0;
+    text-align: center;
+    margin:0 auto;
+}
